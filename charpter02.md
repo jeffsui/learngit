@@ -90,7 +90,7 @@ git文件有几种状态
     no changes added to commit (use "git add" and/or "git commit -a")
 #3.小结:
    
-   git 有三种状态,分别是:
+   git 有四种状态,分别是:
    
    a.untracked - 还没添加到仓库中。
    b.unmodified - 自上次提交以来，文件未曾修改过。
