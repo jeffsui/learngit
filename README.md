@@ -1,9 +1,13 @@
 git\_learn\_menu
 ===============
 
-#gitå­¦ä¹ æ‰‹æœ­
+#gitÑ§Ï°ÊÖÔý
 
 
-[charpter01]("http://http://57.8.11.89:8026/gitbucket/root/git_learn_menu/blob/master/charpter01.md")
+[charpter01]("#charpter01.md")
 
-[charpter02]("http://localhost:8026/gitbucket/root/git_learn_menu/chartpter02.md")
+[charpter02]("#chartpter02.md")
+
+[charpter03]("#chartpter03.md")
+
+[charpter04]("#chartpter04.md")
