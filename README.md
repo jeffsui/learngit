@@ -1,8 +1,7 @@
 git\_learn\_menu
 ===============
 
-#gitÑ§Ï°ÊÖÔı
-
+#gitå­¦ä¹ æ‰‹æœ­
 
 [charpter01]("#charpter01.md")
 
