@@ -10,9 +10,10 @@ git add后如果又修改了，此时git commit只会提交add过的版本，后
 git checkout -- <file> revert文件到add过或最新的版本，先add的版本，再最新的版本
 git reset HEAD <file> 可以撤销git add的版本
 </code></pre>
-场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
-场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
-场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+    场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+    场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+    场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
 
 <code><pre>
 git rm 会同时删除仓库里的文件和本地文件，但是在提交之前，还是可以通过git reset HEAD && git checkout —- <file>恢复文件
@@ -32,7 +33,7 @@ git stash list 查看保存的stash
 git stash apply stash@{n} 恢复指定的stash
 git stash pop stash@{n} 恢复现场并删除该stash
 如果一个分支没有被合并过，git branch -d feature 会被友情提醒，需要通过git branch -D feature 强行删除
-git tag <name>新建一个标签，默认为HEAD，也可以指定一个commit id；
+git tag <name>新建一个标签，默认为HEAD，也可以指定一个commit id
 git tag -a <tagname> -m "blablabla..."可以指定标签信息；
 
 git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
