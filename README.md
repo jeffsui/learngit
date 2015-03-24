@@ -1,4 +1,4 @@
 # learngit
 hello git and github
 ##1.add file learngit01.md
-    添加git常用命令
+    娣诲姞git甯哥敤鍛戒护

@@ -1,46 +1,45 @@
 <code><pre>
+git init åˆ›å»ºç‰ˆæœ¬åº“
+git add æ·»åŠ æ–‡ä»¶åˆ°ç¼“å†²åŒº
+git commit -m â€˜xxxâ€™ æäº¤åˆ°æœ¬åœ°ä»“åº“
+git status æŸ¥çœ‹å½“å‰ç›®å½•çŠ¶æ€
+git diff æŸ¥çœ‹æ–‡ä»¶å˜åŒ–çš„å†…å®¹
+git reset --hard HEAD^ å›é€€åˆ°ä¸Šä¸€ç‰ˆæœ¬, git reset --hard HEAD^^ å›é€€åˆ°ä¸Šä¸Šç‰ˆæœ¬,git reset --hard HEAD~100 å›é€€åˆ°ä¸Š100ä¸ªç‰ˆæœ¬ï¼Œgit reset â€”hard <commit idå‰å‡ ä½>  å›é€€åˆ°æŒ‡å®šç‰ˆæœ¬
+git reflog æŸ¥çœ‹å†å²ç‰ˆæœ¬ï¼Œå¦‚æœæœ‰éœ€è¦ï¼Œéšåå¯ä»¥æ ¹æ®æ˜¾ç¤ºçš„commit idè¿›è¡Œå›é€€
+git addåå¦‚æœåˆä¿®æ”¹äº†ï¼Œæ­¤æ—¶git commitåªä¼šæäº¤addè¿‡çš„ç‰ˆæœ¬ï¼Œåé¢ä¿®æ”¹çš„ä¸ä¼šæäº¤
+git checkout -- <file> revertæ–‡ä»¶åˆ°addè¿‡æˆ–æœ€æ–°çš„ç‰ˆæœ¬ï¼Œå…ˆaddçš„ç‰ˆæœ¬ï¼Œå†æœ€æ–°çš„ç‰ˆæœ¬
+git reset HEAD <file> å¯ä»¥æ’¤é”€git addçš„ç‰ˆæœ¬
+åœºæ™¯1ï¼šå½“ä½ æ”¹ä¹±äº†å·¥ä½œåŒºæŸä¸ªæ–‡ä»¶çš„å†…å®¹ï¼Œæƒ³ç›´æ¥ä¸¢å¼ƒå·¥ä½œåŒºçš„ä¿®æ”¹æ—¶ï¼Œç”¨å‘½ä»¤git checkout -- fileã€‚
 
-git init ´´½¨°æ±¾¿â
-¼şºÍ±¾µØ¼ş£¬µ«ÊÇÔÚÌá½»Ö®Ç°£¬»¹ÊÇ¿ÉÒÔÍ¨¹ıgit reset HEAD && git checkout ¡ª- <file>»Ö¸´¼ş
-git rm Ïàµ±ÓÚ±¾µØrm <file> ÔÙgit add
-git remote add origin git@server-name:path/repo-name.git ¹ØÁªÒ»¸öÔ¶³Ì¿â
-git push -u origin masterµÚÒ»´ÎÍÆËÍmaster·ÖÖ§µÄËùÓĞÄÚÈİ
-git push origin masterÍÆËÍ×îĞÂĞŞ¸Ä(¶ÔÔ¶³Ì¿â·ÇµÚÒ»´Î)
-git branch ²é¿´·ÖÖ§
-git branch <name> ´´½¨·ÖÖ§
-git checkout <name> ÇĞ»»·ÖÖ§
-git checkout -b <name> ´´½¨+ÇĞ»»·ÖÖ§
-git merge <name> ºÏ²¢Ä³·ÖÖ§µ½µ±Ç°·ÖÖ§
-git branch -d <name> É¾³ı·ÖÖ§
-git log ¡ªgraph ²é¿´·ÖÖ§ºÏ²¢Í¼
-git stash ±£´æ¹¤×÷ÏÖ³¡
-git stash list ²é¿´±£´æµÄstash
-git stash apply stash@{n} »Ö¸´Ö¸¶¨µÄstash
-git stash pop stash@{n} »Ö¸´ÏÖ³¡²¢É¾³ı¸Ãstash
-Èç¹ûÒ»¸ö·ÖÖ§Ã»ÓĞ±»ºÏ²¢¹ı£¬git branch -d feature »á±»ÓÑÇéÌáĞÑ£¬ĞèÒªÍ¨¹ıgit branch -D feature Ç¿ĞĞÉ¾³ı
-git tag <name>ĞÂ½¨Ò»¸ö±êÇ©£¬Ä¬ÈÏÎªHEAD£¬Ò²¿ÉÒÔÖ¸¶¨Ò»¸öcommit id£»
-git tag -a <tagname> -m "blablabla..."¿ÉÒÔÖ¸¶¨±êÇ©ĞÅÏ¢£»
+åœºæ™¯2ï¼šå½“ä½ ä¸ä½†æ”¹ä¹±äº†å·¥ä½œåŒºæŸä¸ªæ–‡ä»¶çš„å†…å®¹ï¼Œè¿˜æ·»åŠ åˆ°äº†æš‚å­˜åŒºæ—¶ï¼Œæƒ³ä¸¢å¼ƒä¿®æ”¹ï¼Œåˆ†ä¸¤æ­¥ï¼Œç¬¬ä¸€æ­¥ç”¨å‘½ä»¤git reset HEAD fileï¼Œå°±å›åˆ°äº†åœºæ™¯1ï¼Œç¬¬äºŒæ­¥æŒ‰åœºæ™¯1æ“ä½œã€‚
 
-git tag -s <tagname> -m "blablabla..."¿ÉÒÔÓÃPGPÇ©Ãû±êÇ©£»
-git tag¿ÉÒÔ²é¿´ËùÓĞ±êÇ©¡£
-git push origin <tagname>¿ÉÒÔÍÆËÍÒ»¸ö±¾µØ±êÇ©£»
-git push origin --tags¿ÉÒÔÍÆËÍÈ«²¿Î´ÍÆËÍ¹ıµÄ±¾µØ±êÇ©£»
-git tag -d <tagname>¿ÉÒÔÉ¾³ıÒ»¸ö±¾µØ±êÇ©£»
-git push origin :refs/tags/<tagname>¿ÉÒÔÉ¾³ıÒ»¸öÔ¶³Ì±êÇ©¡£git add Ìí¼Ó¼şµ½»º³åÇø
-git commit -m ¡®xxx¡¯ Ìá½»µ½±¾µØ²Ö¿â
-git status ²é¿´µ±Ç°Ä¿Â¼×´Ì¬
-git diff ²é¿´¼ş±ä»¯µÄÄÚÈİ
-git reset --hard HEAD^ »ØÍËµ½ÉÏÒ»°æ±¾, git reset --hard HEAD^^ »ØÍËµ½ÉÏÉÏ°æ±¾,git reset --hard HEAD~100 »ØÍËµ½ÉÏ100¸ö°æ±¾£¬git reset ¡ªhard <commit idÇ°¼¸Î»>  »ØÍËµ½Ö¸¶¨°æ±¾
-git reflog ²é¿´ÀúÊ·°æ±¾£¬Èç¹ûÓĞĞèÒª£¬Ëæºó¿ÉÒÔ¸ù¾İÏÔÊ¾µÄcommit id½øĞĞ»ØÍË
-git addºóÈç¹ûÓÖĞŞ¸ÄÁË£¬´ËÊ±git commitÖ»»áÌá½»add¹ıµÄ°æ±¾£¬ºóÃæĞŞ¸ÄµÄ²»»áÌá½»
-git checkout -- <file> revert¼şµ½add¹ı»ò×îĞÂµÄ°æ±¾£¬ÏÈaddµÄ°æ±¾£¬ÔÙ×îĞÂµÄ°æ±¾
-git reset HEAD <file> ¿ÉÒÔ³·Ïúgit addµÄ°æ±¾
-³¡¾°1£ºµ±Äã¸ÄÂÒÁË¹¤×÷ÇøÄ³¸ö¼şµÄÄÚÈİ£¬ÏëÖ±½Ó¶ªÆú¹¤×÷ÇøµÄĞŞ¸ÄÊ±£¬ÓÃÃüÁîgit checkout -- file¡£
-
-³¡¾°2£ºµ±Äã²»µ«¸ÄÂÒÁË¹¤×÷ÇøÄ³¸ö¼şµÄÄÚÈİ£¬»¹Ìí¼Óµ½ÁËÔİ´æÇøÊ±£¬Ïë¶ªÆúĞŞ¸Ä£¬·ÖÁ½²½£¬µÚÒ»²½ÓÃÃüÁîgit reset HEAD file£¬¾Í»Øµ½ÁË³¡¾°1£¬µÚ¶ş²½°´³¡¾°1²Ù×÷¡£
-
-³¡¾°3£ºÒÑ¾­Ìá½»ÁË²»ºÏÊÊµÄĞŞ¸Äµ½°æ±¾¿âÊ±£¬ÏëÒª³·Ïú±¾´ÎÌá½»£¬²Î¿¼°æ±¾»ØÍËÒ»½Ú£¬²»¹ıÇ°ÌáÊÇÃ»ÓĞÍÆËÍµ½Ô¶³Ì¿â¡£
+åœºæ™¯3ï¼šå·²ç»æäº¤äº†ä¸åˆé€‚çš„ä¿®æ”¹åˆ°ç‰ˆæœ¬åº“æ—¶ï¼Œæƒ³è¦æ’¤é”€æœ¬æ¬¡æäº¤ï¼Œå‚è€ƒç‰ˆæœ¬å›é€€ä¸€èŠ‚ï¼Œä¸è¿‡å‰ææ˜¯æ²¡æœ‰æ¨é€åˆ°è¿œç¨‹åº“ã€‚
 
 
-git rm »áÍ¬Ê±É¾³ı²Ö¿âÀïµÄ
-</code<pre>
+git rm ä¼šåŒæ—¶åˆ é™¤ä»“åº“é‡Œçš„æ–‡ä»¶å’Œæœ¬åœ°æ–‡ä»¶ï¼Œä½†æ˜¯åœ¨æäº¤ä¹‹å‰ï¼Œè¿˜æ˜¯å¯ä»¥é€šè¿‡git reset HEAD && git checkout â€”- <file>æ¢å¤æ–‡ä»¶
+git rm ç›¸å½“äºæœ¬åœ°rm <file> å†git add
+git remote add origin git@server-name:path/repo-name.git å…³è”ä¸€ä¸ªè¿œç¨‹åº“
+git push -u origin masterç¬¬ä¸€æ¬¡æ¨é€masteråˆ†æ”¯çš„æ‰€æœ‰å†…å®¹
+git push origin masteræ¨é€æœ€æ–°ä¿®æ”¹(å¯¹è¿œç¨‹åº“éç¬¬ä¸€æ¬¡)
+git branch æŸ¥çœ‹åˆ†æ”¯
+git branch <name> åˆ›å»ºåˆ†æ”¯
+git checkout <name> åˆ‡æ¢åˆ†æ”¯
+git checkout -b <name> åˆ›å»º+åˆ‡æ¢åˆ†æ”¯
+git merge <name> åˆå¹¶æŸåˆ†æ”¯åˆ°å½“å‰åˆ†æ”¯
+git branch -d <name> åˆ é™¤åˆ†æ”¯
+git log â€”graph æŸ¥çœ‹åˆ†æ”¯åˆå¹¶å›¾
+git stash ä¿å­˜å·¥ä½œç°åœº
+git stash list æŸ¥çœ‹ä¿å­˜çš„stash
+git stash apply stash@{n} æ¢å¤æŒ‡å®šçš„stash
+git stash pop stash@{n} æ¢å¤ç°åœºå¹¶åˆ é™¤è¯¥stash
+å¦‚æœä¸€ä¸ªåˆ†æ”¯æ²¡æœ‰è¢«åˆå¹¶è¿‡ï¼Œgit branch -d feature ä¼šè¢«å‹æƒ…æé†’ï¼Œéœ€è¦é€šè¿‡git branch -D feature å¼ºè¡Œåˆ é™¤
+git tag <name>æ–°å»ºä¸€ä¸ªæ ‡ç­¾ï¼Œé»˜è®¤ä¸ºHEADï¼Œä¹Ÿå¯ä»¥æŒ‡å®šä¸€ä¸ªcommit idï¼›
+git tag -a <tagname> -m "blablabla..."å¯ä»¥æŒ‡å®šæ ‡ç­¾ä¿¡æ¯ï¼›
+
+git tag -s <tagname> -m "blablabla..."å¯ä»¥ç”¨PGPç­¾åæ ‡ç­¾ï¼›
+git tagå¯ä»¥æŸ¥çœ‹æ‰€æœ‰æ ‡ç­¾ã€‚
+git push origin <tagname>å¯ä»¥æ¨é€ä¸€ä¸ªæœ¬åœ°æ ‡ç­¾ï¼›
+git push origin --tagså¯ä»¥æ¨é€å…¨éƒ¨æœªæ¨é€è¿‡çš„æœ¬åœ°æ ‡ç­¾ï¼›
+git tag -d <tagname>å¯ä»¥åˆ é™¤ä¸€ä¸ªæœ¬åœ°æ ‡ç­¾ï¼›
+git push origin :refs/tags/<tagname>å¯ä»¥åˆ é™¤ä¸€ä¸ªè¿œç¨‹æ ‡ç­¾ã€‚
+</code></pre>
