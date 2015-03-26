@@ -15,5 +15,5 @@
 - 忽略文件类型 `*.so`
 - 忽略单个文件 `applicationContext.xml`
 
-
+*.* 忽略所有文件
 
