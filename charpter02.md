@@ -7,7 +7,7 @@
 
 git文件有几种状态
 
-#1.新增文件
+# 1.新增文件
 
 新增一个charpter02.md文件
 
@@ -61,7 +61,7 @@ git文件有几种状态
     
     git add .
 
-#2.查看提交日志
+# 2.查看提交日志
 
 通过下面的命令查看提交日志
     
@@ -88,7 +88,7 @@ git文件有几种状态
     #       modified:   charpter02.md
     #
     no changes added to commit (use "git add" and/or "git commit -a")
-#3.小结:
+# 3.小结:
    
    git 有四种状态,分别是:
    
