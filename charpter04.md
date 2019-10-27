@@ -1,23 +1,23 @@
-#git¼ì³ö²¿·Ö´úÂë·½·¨
+# gitæ£€å‡ºéƒ¨åˆ†ä»£ç æ–¹æ³•
 
-##1.³õÊ¼»¯¿Õ²Ö´¢:
+## 1.åˆå§‹åŒ–ç©ºä»“å‚¨:
 
     git init <repo> && cd <repo>
-    git remote add ¨Cf <name> <url>
-##2.´ò¿ªsparse-checkoutÌØĞÔ:
+    git remote add â€“f <name> <url>
+## 2.æ‰“å¼€sparse-checkoutç‰¹æ€§:
 
     git config core.sparsecheckout true
 
-##3.ÅäÖÃ.git/info/sparse-checkout£¬ÁĞ³öÄãÏëÒªcheckoutµÄÄ¿Â¼:
+## 3.é…ç½®.git/info/sparse-checkoutï¼Œåˆ—å‡ºä½ æƒ³è¦checkoutçš„ç›®å½•:
 
     echo some/dir/ >> .git/info/sparse-checkout
     echo another/sub/tree >> .git/info/sparse-checkout
 
-##4.´ÓÔ¶¶Ë»ñÈ¡´úÂë:
+## 4.ä»è¿œç«¯è·å–ä»£ç :
 
     git pull <remote> <branch>
 
-Äã»á¿´µ½Ö»ÓĞÄãÖ¸¶¨µÄ×ÓÄ¿Â¼µÄ´úÂë±»checkout³öÀ´ÁË¡£
+ä½ ä¼šçœ‹åˆ°åªæœ‰ä½ æŒ‡å®šçš„å­ç›®å½•çš„ä»£ç è¢«checkoutå‡ºæ¥äº†ã€‚
 
-    git1.7ÒÔÉÏ²ÅÓĞÕâ¸ö¹¦ÄÜ
+    git1.7ä»¥ä¸Šæ‰æœ‰è¿™ä¸ªåŠŸèƒ½
 
