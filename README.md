@@ -1,7 +1,7 @@
 git\_learn\_menu
 ===============
 
-#git学习手札
+# git学习手札
 
 [charpter01]("https://github.com/jeffsui/learngit/blob/master/charpter01.md")
 
